@@ -1,0 +1,38 @@
+.list {
+    width: 100%;
+    margin: 0 auto 1.2rem;
+}
+
+@media (max-width: 680px){
+    .list {
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        align-content: stretch;
+        align-items: center;
+        width:100%;
+    }
+}
+
+.book {
+    width:238px;
+    background-color: whitesmoke;
+    border-radius:7px;
+    box-shadow: 0 1px 3px #ccc;
+    padding:10px;
+    margin: 0 1.2rem 0.9rem;
+    float: left;
+}
+
+.book h1 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.book p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

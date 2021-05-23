@@ -1,38 +1,86 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-width: 90%;
+  height: 100%;
+  background-color: #aedefc;
+  box-shadow: 0 1px 3px #ccc;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-content: stretch;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin: 1.2rem auto 0;
+  color:whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+form {
+  display:flex;
+  flex-direction: row;
+  margin: 1.2rem auto 1.2rem;
+}
+
+@media (max-width: 1300px){
+  form {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: stretch;
+    align-items: center;
   }
 }
+
+input {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 1.2rem 0.9rem;
+  padding: 2px 4px;
+  border-radius: 0.2rem;
+  background-color: whitesmoke;
+  border: none;
+  width: 250px;
+  height: 25px;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+input::placeholder {
+  font-size: 15px;
+  color:#666666;
+}
+
+select {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 1.2rem 0.9rem;
+  padding: 2px 4px;
+  border-radius: 0.2rem;
+  background-color: whitesmoke;
+  border: none;
+  width: 258px;
+  height: 33px;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+button {
+  width:258px;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background-color: whitesmoke;
+  border-radius: 0.2rem;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-size:15px;
+  height: 33px;
+  text-decoration:none;
+  margin: 0 1.2rem 0.9rem;
+}
+
+
